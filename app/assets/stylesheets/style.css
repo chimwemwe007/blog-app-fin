@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 2rem;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Align items in the center vertically */
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.userLink {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center; /* Align items in the center vertically */
+}
+
+.userName {
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 4rem;
+  transition: color 0.3s;
+}
+
+.userName:hover {
+  color: #007bff;
+}
+
+.userImg {
+  width: 20%;
+  height: 200px;
+}
+
+.userCon {
+  border: 2px solid black;
+  margin-left: 20px;
+  padding: 10px;
+  width: 70%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.Upostcount {
+  margin-left: auto;
+  margin-bottom: 0;
+  font-size: 1rem;
+  margin-top: 100px;
+}
+
+.userLink:hover .userName {
+  color: #007bff;
+}
+
+.bio {
+  width: 95.7%;
+  margin: 40px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.bioText {
+  margin-top: 10px;
+}
+
+.recPost {
+  width: 95.7%;
+  margin: 40px;
+  margin-top: 10px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.comLik {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  float: right;
+  margin-top: -20px;
+}
+
+.seeAllPostBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 50%;
+}
+
+.seeAllPostBtn:hover {
+  background-color: #0056b3;
+}
+
+.userCom {
+  width: 95.7%;
+  margin: 40px;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+
+.postInt {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.postInt:hover {
+  transform: scale(1.1); /* Zoom in effect on hover */
+  background-color: #f0f0f0; /* Change the background color on hover */
+}
+
+.postclick {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pText {
+  margin-top: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+h2:hover,
+.pText:hover,
+.comLik:hover {
+  color: #3498db;
+}
+
+.userPost {
+  margin-top: 10px;
+}
+
+.commentBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.newPostBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.field {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.field1 {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.field2 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-field {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 5px;
+}
+
+.reg {
+  margin-top: 20px;
+}
+
+h3 {
+  color: #dc3545;
+  margin-top: 30px;
+}
+
+#user_email {
+  border: 2px solid black;
+  width: 90%;
+}
+
+#user_password {
+  border: 2px solid black;
+  width: 90%;
+}
+
+.signUpName {
+  border: 2px solid black;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.cp {
+  border: 2px solid black;
+  width: 90%;
+}
+
+.mylabel {
+  margin-bottom: 20px;
+}
+
+.logTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginbtn {
+  width: 90%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

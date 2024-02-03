@@ -18,7 +18,7 @@
 
 # 📖 Rails Blog <a name="about-project"></a>
 
-**Rails Blog** a classic example of a blog website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
+**Rails Blog** a simple example of a blog website that shows a list of posts in a blog and users are able to like comment and add a new user.
 
 ## 🗝️ Key Features <a name="key-features"></a>
 
@@ -72,7 +72,7 @@ Clone this repository to your desired folder:
 
 ### Usage
 
-To run the project, execute the following commands:
+To run the project, execute the following commands: rspec spec
 
 ```sh
   rails server
@@ -84,8 +84,8 @@ To run the project, execute the following commands:
 
 👤 **Chimemwe Mkandawire**
 
-- LinkedIn: [Chimemwe] (https://www.linkedin.com/in/chimwemwe-mkandawire/)
-- Github; [Chimemwe] (https://github.com/chimwemwe007)
+- LinkedIn: [Chimemw mkandawiree] (https://www.linkedin.com/in/chimwemwe-mkandawire/)
+- Github; [Chimemwe007] (https://github.com/chimwemwe007)
 - Twitter: [Chimemwe] (https://twitter.com/CHxMZ)
 
 👤 **Faisal Mumtaz**

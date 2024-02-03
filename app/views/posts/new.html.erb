@@ -1,0 +1,10 @@
+<%= form_with(model: [@user, @post], url: user_posts_path(@user), method: :post) do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  
+    <%= form.label :content %>
+    Post Details: <%= form.text_area :text %><br />
+  
+    <%= form.submit 'Create Post' %>
+  <% end %>
+  

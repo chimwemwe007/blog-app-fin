@@ -1,0 +1,39 @@
+<%= stylesheet_link_tag 'style' %>
+
+<div class="container">
+<img src ='<%= @user.photo %>' class="userImg" alt="User Photo">
+<div class="userCon">
+<h1 class="userName"><%= @user.name %> </h1>
+<p class="Upostcount">Number of Posts: <%= @user.posts.count %></p>
+</div>
+</div>
+
+<% @posts.each_with_index do |post, index| %>
+   <div class="recPost postInt">
+   <a class ="postclick" href="<%= user_post_path(@user, post) %>">
+    <h2>Post #<%= index + 1 %></h2>
+    
+      <p class="pText" ><%= truncate(post.text, length: 50, separator: ' ') %></p>
+    </a>
+    <div class="comLik">
+    <p>Comments: <%= post.comments.count %>, Likes: <%= post.likes.count %></p>
+  </div>
+  </div>
+
+  <% if post.recent_comments.any? %>
+  <div class="userCom">
+  <% post.recent_comments.each do |comment| %>
+            <% if comment.user.present? %>
+              <p><%= comment.user.name %>: <%= comment.text %></p>
+            <% else %>
+              <p>Anonymous: <%= comment.text %></p>
+            <% end %>
+          <% end %>
+  
+  </div>
+<% end %>
+<% end %>
+
+<button class="seeAllPostBtn">
+<%= link_to 'Pagination', user_posts_path(@user.id) %>
+</button>

@@ -50,3 +50,5 @@ group :test do
   gem 'shoulda-matchers', '~> 5.0'
   gem 'webdrivers'
 end
+
+gem 'nokogiri', '1.16.0'
